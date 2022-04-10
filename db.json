@@ -2,6 +2,7 @@
     "users": [
         {
             "_id": "6252a09c95d2f56460205fb7",
+            "id": 1,
             "index": 0,
             "guid": "08db9170-0ca0-4563-8e6d-4f8f9863053c",
             "name": "Bullock Haley",
@@ -14,6 +15,7 @@
         },
         {
             "_id": "6252a09ccdccbecdc13966eb",
+            "id": 2,
             "index": 1,
             "guid": "e6fc1bcd-8475-47a3-af82-c1f6a982ee42",
             "name": "Good Sheppard",
@@ -26,6 +28,7 @@
         },
         {
             "_id": "6252a09c443fbf6e3dc44b36",
+            "id": 3,
             "index": 2,
             "guid": "1a569719-bb9d-469b-9c32-5072ed026007",
             "name": "Alexandria Sampson",
@@ -38,6 +41,7 @@
         },
         {
             "_id": "6252a09c22454b4a491a25cc",
+            "id": 4,
             "index": 3,
             "guid": "52814b47-2555-4b66-8e9c-f4e66757c286",
             "name": "Lorna Anthony",
@@ -50,6 +54,7 @@
         },
         {
             "_id": "6252a0b0b3e8b9be5f914941",
+            "id": 5,
             "index": 3,
             "guid": "cd5af027-7d73-4c61-9668-88e5e900bfec",
             "name": "Kris Dotson",
@@ -64,6 +69,7 @@
     "articles": [
         {
             "_id": "6252a287a5f1c69cbfaa6f72",
+            "id": 1,
             "index": 0,
             "company": "VORTEXACO",
             "about": "Sit pariatur aute occaecat quis laboris. Labore qui fugiat eiusmod consectetur elit dolore exercitation aliquip. Proident dolore elit Lorem officia anim. Consectetur nulla quis aliqua dolore ad qui. Minim et ea duis nisi sint duis nisi qui non ea adipisicing elit qui. Tempor sunt esse ex minim laboris nulla Lorem mollit nostrud dolore ipsum est adipisicing labore. Non eu do quis in laborum in esse consectetur qui amet.\r\n",
@@ -84,6 +90,7 @@
         },
         {
             "_id": "6252a287fc01a6015ffcc90d",
+            "id": 2,
             "index": 1,
             "company": "OBONES",
             "about": "Proident veniam ex sit amet tempor id. Enim elit enim duis voluptate culpa amet minim veniam culpa ad magna. Irure quis minim sit irure tempor officia duis.\r\n",
@@ -104,6 +111,7 @@
         },
         {
             "_id": "6252a28769816f52db01dbe9",
+            "id": 3,
             "index": 2,
             "company": "ACCIDENCY",
             "about": "Ut amet anim cillum id id ex dolore. Cupidatat deserunt aute culpa magna velit cillum fugiat nulla do. Duis laborum ullamco laboris aute pariatur dolore nisi excepteur magna cupidatat elit sit in eiusmod. Aliqua excepteur commodo sit nostrud esse cillum amet sint. Irure exercitation amet et ullamco commodo mollit id. Lorem ullamco irure id exercitation officia consequat laborum sit adipisicing ut non. Quis qui velit voluptate tempor velit id.\r\n",
