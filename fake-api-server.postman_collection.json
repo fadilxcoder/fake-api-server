@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "250c9962-11f8-4327-9b63-b8a77fc12398",
+		"name": "Personal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Testing response HTTP Code",
+							"pm.test(\"Testing status code \", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,401]);",
+							"});",
+							"",
+							"// Testing response JSON schema",
+							"var Ajv = require(\"ajv\");",
+							"ajv = new Ajv({logger: console});",
+							"schema = {",
+							"    \"type\": \"array\",",
+							"    \"items\": {",
+							"        \"type\": \"object\",",
+							"        \"properties\": {",
+							"            \"_id\": { \"type\": \"string\" },",
+							"            \"id\": { \"type\": \"integer\" },",
+							"            \"index\": { \"type\": \"integer\" },",
+							"            \"guid\": { \"type\": \"string\" },",
+							"            \"name\": { \"type\": \"string\" },",
+							"            \"email\": { \"type\": \"string\" },",
+							"            \"phone\": { \"type\": \"string\" },",
+							"            \"isActive\": { \"type\": \"boolean\" },",
+							"            \"address\": { \"type\": \"string\" },",
+							"            \"balance\": { \"type\": \"string\" },",
+							"            \"about\": { \"type\": \"string\" }",
+							"        },",
+							"        'additionalProperties': false,",
+							"    }",
+							"};",
+							"",
+							"pm.test(\"Response JSON schema validation\", function() {",
+							"    pm.expect(ajv.validate(schema, pm.response.json())).to.be.true;",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://my-json-server.typicode.com/fadilxcoder/fake-api-server/users",
+					"protocol": "https",
+					"host": [
+						"my-json-server",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"fadilxcoder",
+						"fake-api-server",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/articles",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Testing response HTTP Code",
+							"pm.test(\"Testing status code \", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,401]);",
+							"});",
+							"",
+							"// Testing response JSON schema",
+							"var Ajv = require(\"ajv\");",
+							"ajv = new Ajv({logger: console});",
+							"schema = {",
+							"    \"type\": \"array\",",
+							"    \"items\": {",
+							"        \"type\": \"object\",",
+							"        \"properties\": {",
+							"            \"_id\": { \"type\": \"string\" },",
+							"            \"id\": { \"type\": \"integer\" },",
+							"            \"index\": { \"type\": \"integer\" },",
+							"            \"company\": { \"type\": \"string\" },",
+							"            \"about\": { \"type\": \"string\" },",
+							"            \"friends\": { ",
+							"                \"type\": \"array\",",
+							"                \"items\" : {",
+							"                    \"type\": \"object\",",
+							"                    \"properties\": {",
+							"                        \"id\": { \"type\": \"integer\" },",
+							"                        \"name\": { \"type\": \"string\" },",
+							"                    }",
+							"                }",
+							"            }",
+							"        },",
+							"        'additionalProperties': false,",
+							"    }",
+							"};",
+							"",
+							"pm.test(\"Response JSON schema validation\", function() {",
+							"    pm.expect(ajv.validate(schema, pm.response.json())).to.be.true;",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://my-json-server.typicode.com/fadilxcoder/fake-api-server/articles",
+					"protocol": "https",
+					"host": [
+						"my-json-server",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"fadilxcoder",
+						"fake-api-server",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users/{id}",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Testing response HTTP Code",
+							"pm.test(\"Testing status code \", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,401]);",
+							"});",
+							"",
+							"// Testing response JSON schema",
+							"var Ajv = require(\"ajv\");",
+							"ajv = new Ajv({logger: console});",
+							"schema = {",
+							"    \"type\": \"object\",",
+							"    \"properties\": {",
+							"        \"_id\": { \"type\": \"string\" },",
+							"        \"id\": { \"type\": \"integer\" },",
+							"        \"index\": { \"type\": \"integer\" },",
+							"        \"guid\": { \"type\": \"string\" },",
+							"        \"name\": { \"type\": \"string\" },",
+							"        \"email\": { \"type\": \"string\" },",
+							"        \"phone\": { \"type\": \"string\" },",
+							"        \"isActive\": { \"type\": \"boolean\" },",
+							"        \"address\": { \"type\": \"string\" },",
+							"        \"balance\": { \"type\": \"string\" },",
+							"        \"about\": { \"type\": \"string\" }",
+							"    },",
+							"    'additionalProperties': false,",
+							"};",
+							"",
+							"pm.test(\"Response JSON schema validation\", function() {",
+							"    pm.expect(ajv.validate(schema, pm.response.json())).to.be.true;",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://my-json-server.typicode.com/fadilxcoder/fake-api-server/users/2",
+					"protocol": "https",
+					"host": [
+						"my-json-server",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"fadilxcoder",
+						"fake-api-server",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/articles/{id}",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Testing response HTTP Code",
+							"pm.test(\"Testing status code \", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,401]);",
+							"});",
+							"",
+							"// Testing response JSON schema",
+							"var Ajv = require(\"ajv\");",
+							"ajv = new Ajv({logger: console});",
+							"schema = {",
+							"    \"type\": \"object\",",
+							"    \"properties\": {",
+							"        \"_id\": { \"type\": \"string\" },",
+							"        \"id\": { \"type\": \"integer\" },",
+							"        \"index\": { \"type\": \"integer\" },",
+							"        \"company\": { \"type\": \"string\" },",
+							"        \"about\": { \"type\": \"string\" },",
+							"        \"friends\": { ",
+							"            \"type\": \"array\",",
+							"            \"items\" : {",
+							"                \"type\": \"object\",",
+							"                \"properties\": {",
+							"                    \"id\": { \"type\": \"integer\" },",
+							"                    \"name\": { \"type\": \"string\" },",
+							"                }",
+							"            }",
+							"        }",
+							"    },",
+							"    'additionalProperties': false,",
+							"};",
+							"",
+							"pm.test(\"Response JSON schema validation\", function() {",
+							"    pm.expect(ajv.validate(schema, pm.response.json())).to.be.true;",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://my-json-server.typicode.com/fadilxcoder/fake-api-server/articles/1",
+					"protocol": "https",
+					"host": [
+						"my-json-server",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"fadilxcoder",
+						"fake-api-server",
+						"articles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
