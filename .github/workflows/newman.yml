@@ -14,7 +14,7 @@ jobs:
       - name: Install Node
         uses: actions/setup-node@v3
         with:
-          node-version: "12.x"
+          node-version: "17.x"
 
       # Install the newman command line utility and also install the html extra reporter
       - name: Install newman
@@ -29,7 +29,7 @@ jobs:
       # Run the POSTMAN collection
       - name: Run POSTMAN collection
         run: |
-          newman run fake-api-server.postman_collection.json -r htmlextra --reporter-htmlextra-export test-results/htmlreport.html --reporter-htmlextra-darkTheme  > test-results/runreport1.html
+          newman run fake-api-server.postman_collection.json -r htmlextra --reporter-htmlextra-export test-results/htmlreport.html --reporter-htmlextra-darkTheme
 
       # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
