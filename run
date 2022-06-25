@@ -8,12 +8,12 @@ use Faker\Factory as Faker;
 
 $faker = Faker::create();
 
-const ENTRY = 20;
+const ENTRY = 10;
 
 # users
 
 $users = [];
-for($i=1; $i<=20; $i++):
+for($i=1; $i<=ENTRY; $i++):
     $users[] = [
         '_id' => Uuid::uuid4()->toString(),
         'id' => $i,
@@ -31,7 +31,7 @@ endfor;
 # articles
 
 $articles = [];
-for($i=1; $i<=20; $i++):
+for($i=1; $i<=ENTRY; $i++):
     $articles[] = [
         '_id' => Uuid::uuid4()->toString(),
         'id' => $i,
