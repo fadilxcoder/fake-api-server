@@ -1,5 +1,6 @@
 # Notes
 
+- RUN `php run` to populate with dummy data
 - File should be name : `db.json`
 - URL for API : https://my-json-server.typicode.com/fadilxcoder/fake-api-server
 - `id: 1,` should be present in order to query specific data

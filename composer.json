@@ -1,0 +1,8 @@
+{
+    "name": "fadilxcoder/fake-api-server",
+    "description": "Fake Api",
+    "require": {
+        "fakerphp/faker": "^1.19",
+        "ramsey/uuid": "^4.2"
+    }
+}
