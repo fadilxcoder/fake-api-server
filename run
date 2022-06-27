@@ -35,7 +35,7 @@ for($i=1; $i<=ENTRY; $i++):
     $articles[] = [
         '_id' => Uuid::uuid4()->toString(),
         'id' => $i,
-        'title' => $faker->bs,
+        'title' => ucfirst($faker->bs),
         'description' => $faker->text,
         'views' => $faker->numberBetween($min = 9999, $max = 99999),
         'like'=> $faker->numberBetween($min = 99, $max = 9999),
