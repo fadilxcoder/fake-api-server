@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "2336f1fd-1b41-4ba9-b560-6ba8a34d9318",
+		"_postman_id": "50e13093-5f14-4990-bfa0-85f26aa2c6de",
 		"name": "Fake Api",
 		"description": "*   [https://github.com/fadilxcoder/fake-api-server.git](https://github.com/fadilxcoder/fake-api-server.git)",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "18647677"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -55,17 +54,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://my-json-server.typicode.com/fadilxcoder/fake-api-server/users",
-					"protocol": "https",
+					"raw": "{{BASE_URL}}users",
 					"host": [
-						"my-json-server",
-						"typicode",
-						"com"
-					],
-					"path": [
-						"fadilxcoder",
-						"fake-api-server",
-						"users"
+						"{{BASE_URL}}users"
 					]
 				}
 			},
@@ -125,17 +116,9 @@
 					}
 				},
 				"url": {
-					"raw": "https://my-json-server.typicode.com/fadilxcoder/fake-api-server/users",
-					"protocol": "https",
+					"raw": "{{BASE_URL}}users",
 					"host": [
-						"my-json-server",
-						"typicode",
-						"com"
-					],
-					"path": [
-						"fadilxcoder",
-						"fake-api-server",
-						"users"
+						"{{BASE_URL}}users"
 					]
 				}
 			},
@@ -186,17 +169,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://my-json-server.typicode.com/fadilxcoder/fake-api-server/users/2",
-					"protocol": "https",
+					"raw": "{{BASE_URL}}users/2",
 					"host": [
-						"my-json-server",
-						"typicode",
-						"com"
+						"{{BASE_URL}}users"
 					],
 					"path": [
-						"fadilxcoder",
-						"fake-api-server",
-						"users",
 						"2"
 					]
 				}
@@ -226,7 +203,7 @@
 							"            \"_id\": { \"type\": \"string\" },",
 							"            \"id\": { \"type\": \"integer\" },",
 							"            \"title\": { \"type\": \"string\" },",
-							"            \"content\": { \"type\": \"string\" },",
+							"            \"description\": { \"type\": \"string\" },",
 							"            \"views\": { \"type\": \"integer\" },",
 							"            \"like\": { \"type\": \"integer\" },",
 							"            \"dislike\": { \"type\": \"integer\" },",
@@ -249,17 +226,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://my-json-server.typicode.com/fadilxcoder/fake-api-server/articles",
-					"protocol": "https",
+					"raw": "{{BASE_URL}}articles",
 					"host": [
-						"my-json-server",
-						"typicode",
-						"com"
-					],
-					"path": [
-						"fadilxcoder",
-						"fake-api-server",
-						"articles"
+						"{{BASE_URL}}articles"
 					]
 				}
 			},
@@ -286,7 +255,7 @@
 							"        \"_id\": { \"type\": \"string\" },",
 							"        \"id\": { \"type\": \"integer\" },",
 							"        \"title\": { \"type\": \"string\" },",
-							"        \"content\": { \"type\": \"string\" },",
+							"        \"description\": { \"type\": \"string\" },",
 							"        \"views\": { \"type\": \"integer\" },",
 							"        \"like\": { \"type\": \"integer\" },",
 							"        \"dislike\": { \"type\": \"integer\" },",
@@ -317,17 +286,9 @@
 					}
 				},
 				"url": {
-					"raw": "https://my-json-server.typicode.com/fadilxcoder/fake-api-server/articles",
-					"protocol": "https",
+					"raw": "{{BASE_URL}}articles",
 					"host": [
-						"my-json-server",
-						"typicode",
-						"com"
-					],
-					"path": [
-						"fadilxcoder",
-						"fake-api-server",
-						"articles"
+						"{{BASE_URL}}articles"
 					]
 				}
 			},
@@ -354,7 +315,7 @@
 							"        \"_id\": { \"type\": \"string\" },",
 							"        \"id\": { \"type\": \"integer\" },",
 							"        \"title\": { \"type\": \"string\" },",
-							"        \"content\": { \"type\": \"string\" },",
+							"        \"description\": { \"type\": \"string\" },",
 							"        \"views\": { \"type\": \"integer\" },",
 							"        \"like\": { \"type\": \"integer\" },",
 							"        \"dislike\": { \"type\": \"integer\" },",
@@ -376,22 +337,43 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://my-json-server.typicode.com/fadilxcoder/fake-api-server/articles/5",
-					"protocol": "https",
+					"raw": "{{BASE_URL}}articles/5",
 					"host": [
-						"my-json-server",
-						"typicode",
-						"com"
+						"{{BASE_URL}}articles"
 					],
 					"path": [
-						"fadilxcoder",
-						"fake-api-server",
-						"articles",
 						"5"
 					]
 				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "https://my-json-server.typicode.com/fadilxcoder/fake-api-server/",
+			"type": "default"
 		}
 	]
 }
