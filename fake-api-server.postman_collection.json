@@ -278,7 +278,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"_id\": \"{{$guid}}\",\r\n    \"title\": \"{{$randomJobTitle}}\",\r\n    \"content\": \"{{$randomLoremSentences}}\",\r\n    \"views\": {{$randomInt}},\r\n    \"like\": {{$randomInt}},\r\n    \"dislike\": {{$randomInt}},\r\n    \"date_published\": \"{{$randomDateRecent}}\"\r\n}",
+					"raw": "{\r\n    \"_id\": \"{{$guid}}\",\r\n    \"title\": \"{{$randomJobTitle}}\",\r\n    \"description\": \"{{$randomLoremSentences}}\",\r\n    \"views\": {{$randomInt}},\r\n    \"like\": {{$randomInt}},\r\n    \"dislike\": {{$randomInt}},\r\n    \"date_published\": \"{{$randomDateRecent}}\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
