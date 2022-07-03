@@ -19,7 +19,7 @@ for($i=1; $i<=ENTRY; $i++):
         'id' => $i,
         'name' => $faker->name,
         'email' => $faker->email,
-        'tel' => $faker->tollFreePhoneNumber,
+        'phone' => $faker->tollFreePhoneNumber,
         'address'=> $faker->address,
         'job' => $faker->jobTitle,
         'company' => $faker->company,
