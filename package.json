@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "now": "^21.0.1"
+  }
+}
