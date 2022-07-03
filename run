@@ -44,13 +44,18 @@ for($i=1; $i<=ENTRY; $i++):
     ];
 endfor;
 
+# typicode
 $db = [
     'users' => $users,
     'articles' => $articles
 ];
-
 $edb = json_encode($db);
-
 file_put_contents('db.json', $edb);
 
+# mockend
+$db = [
+    'Users' => $users,
+    'Articles' => $articles
+];
+$edb = json_encode($db);
 file_put_contents('.mockend.json', $edb);
