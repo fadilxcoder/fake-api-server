@@ -52,3 +52,5 @@ $db = [
 $edb = json_encode($db);
 
 file_put_contents('db.json', $edb);
+
+file_put_contents('.mockend.json', $edb);
