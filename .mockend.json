@@ -1,13 +1,32 @@
 {
     "Users":{
-        "name": "name",
-        "email": "email",
-        "phone": "tollFreePhoneNumber",
-        "address": "address",
-        "job": "jobTitle",
-        "company": "company",
-        "card": "creditCardType",
-        "account": "creditCardNumber"
+        "id": {
+            "int": "id"
+        },
+        "name": {
+            "string": "name"
+        },
+        "email": {
+            "string": "email"
+        },
+        "phone": {
+            "string": "tollFreePhoneNumber"
+        },
+        "address": {
+            "string": "address"
+        },
+        "job": {
+            "string": "jobTitle"
+        },
+        "company": {
+            "string": "company"
+        },
+        "card": {
+            "string": "creditCardType"
+        },
+        "account": {
+            "string": "creditCardNumber"
+        }
     },
     "Articles":{
         "title": "bs",
