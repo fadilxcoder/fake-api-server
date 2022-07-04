@@ -374,13 +374,13 @@
 		{
 			"key": "BASE_URL",
 			"value": "https://fake-api-app.loca.lt/",
-			"type": "default"
+			"type": "string",
+			"disabled": true
 		},
 		{
 			"key": "BASE_URL",
 			"value": "https://my-json-server.typicode.com/fadilxcoder/fake-api-server/",
-			"type": "string",
-			"disabled": true
+			"type": "default"
 		}
 	]
 }
