@@ -29,7 +29,7 @@ jobs:
       # Run the POSTMAN collection
       - name: Run POSTMAN collection
         run: |
-          newman run fake-api-server.postman_collection.json
+          newman run fake-api-server.postman_collection.json -r htmlextra --reporter-htmlextra-export test-results/htmlreport.html --reporter-htmlextra-darkTheme
 
       # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
