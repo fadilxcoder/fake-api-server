@@ -20,11 +20,11 @@ jobs:
       - name: Install newman
         run: |
           npm install -g newman
-#          npm install -g newman-reporter-htmlextra
+          npm install -g newman-reporter-htmlextra
 
       # Make directory to upload the test results
-#      - name: Make Directory for results
-#        run: mkdir -p test-results
+      - name: Make Directory for results
+        run: mkdir -p test-results
 
       # Run the POSTMAN collection
       - name: Run POSTMAN collection
@@ -32,8 +32,8 @@ jobs:
           newman run fake-api-server.postman_collection.json
 
       # Upload the contents of Test Results directory to workspace
-#      - name: Output the run Details
-#        uses: actions/upload-artifact@v3
-#        with:
-#          name: newman-run-reports
-#          path: test-results
+      - name: Output the run Details
+        uses: actions/upload-artifact@v3
+        with:
+          name: newman-run-reports
+          path: test-results
