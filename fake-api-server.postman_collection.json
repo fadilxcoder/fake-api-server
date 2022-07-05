@@ -356,7 +356,7 @@
 			"script": {
 				"type": "text/javascript",
 				"exec": [
-					"pm.request.headers.add({key: 'Bypass-Tunnel-Reminder', value: 'postman'});"
+					""
 				]
 			}
 		},
@@ -373,14 +373,8 @@
 	"variable": [
 		{
 			"key": "BASE_URL",
-			"value": "https://fake-api-app.loca.lt/",
-			"type": "string",
-			"disabled": true
-		},
-		{
-			"key": "BASE_URL",
 			"value": "https://my-json-server.typicode.com/fadilxcoder/fake-api-server/",
-			"type": "default"
+			"type": "string"
 		}
 	]
 }

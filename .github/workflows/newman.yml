@@ -20,9 +20,6 @@ jobs:
       - name: Install newman
         run: |
           npm install -g newman
-
-      - name: Install newman HTML reporter
-        run: |
           npm install -g newman-reporter-htmlextra
 
       # Make directory to upload the test results
@@ -32,7 +29,7 @@ jobs:
       # Run the POSTMAN collection
       - name: Run POSTMAN collection
         run: |
-          newman run fake-api-server.postman_collection.json -r htmlextra --reporter-htmlextra-export test-results/htmlreport.html --reporter-htmlextra-darkTheme > test-results/runreport1.html
+          newman run fake-api-server.postman_collection.json -r htmlextra --reporter-htmlextra-export test-results/htmlreport.html --reporter-htmlextra-darkTheme
 
       # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
