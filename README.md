@@ -6,9 +6,9 @@
 - `id: 1,` should be present in order to query specific data
 - Can use `<URL>?_id=xxxxx` for queries
 - Newman github action
-- Revers proxy :
-- - `json-server db.json` activate DB to server as API
-- - `lt --port 3000 --local-host localhost --subdomain fake-api-app` exposer API live
+- Command : `npm run start` - Start local JSON server
+
+
 
 ```
 name: Newman Api tester
