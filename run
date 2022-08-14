@@ -119,7 +119,7 @@ endfor;
 
 ############## EOF V0 ##############
 
-# typicode with fake versionning
+# Create fake api
 
 $db = [
     'latest.users' => $usersLatest,
@@ -130,6 +130,13 @@ $db = [
     'v0.articles' => $articlesV0
 ];
 
-$edb = json_encode($db);
+$dbTypicode = [
+    'users' => $usersLatest,
+    'articles' => $articlesLatest,
+];
 
-file_put_contents('db.json', $edb);
+$tdb = json_encode($dbTypicode);
+$gdb = json_encode($db);
+
+file_put_contents('db.json', $tdb);
+file_put_contents('db-vesionning.json', $gdb);
