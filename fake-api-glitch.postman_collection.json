@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "7f8a0688-5630-4532-b8b0-d996949343e8",
-		"name": "Fake Api",
+		"_postman_id": "16c87f03-a66f-4a91-835b-9e8f3f7a7f88",
+		"name": "Fake Api - Glitch / Versionning",
 		"description": "*   [https://github.com/fadilxcoder/fake-api-server.git](https://github.com/fadilxcoder/fake-api-server.git)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "18647677"
@@ -373,8 +373,20 @@
 	"variable": [
 		{
 			"key": "BASE_URL",
-			"value": "https://my-json-server.typicode.com/fadilxcoder/fake-api-server/",
+			"value": "https://json-server-fake-api.glitch.me/latest.",
 			"type": "string"
+		},
+		{
+			"key": "BASE_URL",
+			"value": "https://json-server-fake-api.glitch.me/v1.",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "BASE_URL",
+			"value": "https://json-server-fake-api.glitch.me/v0.",
+			"type": "string",
+			"disabled": true
 		}
 	]
 }
