@@ -19,14 +19,14 @@ for($i=1; $i<=ENTRY; $i++):
     $usersLatest[] = [
         '_id' => Uuid::uuid4()->toString(),
         'id' => $i,
-        'name' => $faker->name,
+        'full_name' => $faker->name,
         'email' => $faker->email,
-        'phone' => $faker->tollFreePhoneNumber,
+        'phone_number' => $faker->tollFreePhoneNumber,
         'address'=> $faker->address,
         'job' => $faker->jobTitle,
         'company' => $faker->company,
-        'card' => $faker->creditCardType,
-        'account' => $faker->creditCardNumber,
+        'card_type' => $faker->creditCardType,
+        'account_number' => $faker->creditCardNumber,
     ];
 endfor;
 
@@ -122,10 +122,10 @@ endfor;
 # Create fake api
 
 $db = [
-    'latest.users' => $usersLatest,
+    'users' => $usersLatest,
     'v1.users' => $usersV1,
     'v0.users' => $usersV0,
-    'latest.articles' => $articlesLatest,
+    'articles' => $articlesLatest,
     'v1.articles' => $articlesV1,
     'v0.articles' => $articlesV0
 ];
