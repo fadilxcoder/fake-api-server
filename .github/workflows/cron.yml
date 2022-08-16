@@ -13,6 +13,12 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v3
 
+      - name: Install dependencies
+        uses: php-actions/composer@v6
+        with:
+          php_version: "7.4"
+          version: 2.x
+
       - name: PHP init 
         uses: nanasess/setup-php@v3
         with:
