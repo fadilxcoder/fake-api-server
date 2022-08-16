@@ -12,6 +12,7 @@
 # Docs
 
 - https://github.com/marketplace/actions/composer-php-actions (Use the Composer CLI in your Github Actions.)
+- https://github.com/marketplace/actions/setup-php-environment (Setup PHP environment)
 
 ### Github Action
 

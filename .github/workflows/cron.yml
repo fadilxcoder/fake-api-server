@@ -18,6 +18,8 @@ jobs:
         with:
           php_version: "7.4"
           version: 2.x
+          ssh_key: ${{ secrets.SSH_KEY }}
+          ssh_key_pub: ${{ secrets.SSH_KEY_PUB }}
 
       - name: PHP init 
         uses: nanasess/setup-php@v3
