@@ -15,6 +15,7 @@
 - https://github.com/marketplace/actions/setup-php-environment (Setup PHP environment)
 - https://crontab.guru/ (Cron)
 - Cron `*/2 * * * *` (At 2 minutes interval) / `0 6,18 * * *` (At 12 hours interval 06H00 - 18H00) 
+- https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows (Github action - Events that trigger workflows)
 
 ### Github Action
 
