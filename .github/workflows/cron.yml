@@ -1,0 +1,29 @@
+name: Exec PHP
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/2 * * * *" # “At 2 minutes interval”
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+
+      - name: PHP init 
+        uses: nanasess/setup-php@v3
+        with:
+          php-version: '7.4'
+      - run: php run
+
+      - name: Save - Commit and push
+        run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          timestamp=$(date -u)
+          git commit -m "Latest data: ${timestamp}" || exit 0
+          git push
