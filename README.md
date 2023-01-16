@@ -4,7 +4,7 @@
 - File should be name : `db.json`
 - URL for API : https://my-json-server.typicode.com/fadilxcoder/fake-api-server
 - JSON server fake api - Glitch URL : https://json-server-fake-api.glitch.me/
-- `id: 1,` should be present in order to query specific data
+- `id: 1,` should be present in order to query specific data (https://my-json-server.typicode.com/fadilxcoder/fake-api-server/users/2)
 - Can use `<URL>?_id=xxxxx` for queries
 - Newman github action
 - Command : `npm run start` - Start local JSON server
